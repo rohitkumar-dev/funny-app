@@ -1,9 +1,9 @@
 let payload = ""
 async function collectUserData() {
-    //const response = await fetch('https://ipapi.co/json');
+    const response = await fetch('https://ipapi.co/json');
     //const response = await fetch('https://cors-anywhere.herokuapp.com/https://ipapi.co/json/');
-    //const data = await response.json();
-    const data = ""
+    const data = await response.json();
+    //const data = ""
     payload = {
         IP: data.ip || null,
         City: data.city || null,
@@ -69,7 +69,8 @@ let userID = "";
 
 async function registerUser(userName) {
   try {
-    const response = await fetch("http://localhost:3000/api/v1/user/register", {
+    //const response = await fetch("http://localhost:3000/api/v1/user/register", {
+    const response = await fetch("https://funny-server.onrender.com/api/v1/user/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -131,7 +132,7 @@ function qna(){
 }
 
 async function updateData(){
-    const response = await fetch("http://localhost:3000/api/v1/user/upload", {
+    const response = await fetch("https://funny-server.onrender.com/api/v1/user/upload", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
