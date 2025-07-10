@@ -1,0 +1,98 @@
+body {
+    background: #fdeda9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: cursive;
+}
+.area {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#mainHead {
+    font-size: 28px;
+    color: orangered;
+    text-align: center;
+}
+#subHead {
+    text-align: center;
+    font-size: 23px;
+    margin-top: 0;
+}
+#btnArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+    margin-top: 20px;
+}
+.btn {
+    width: 90px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+.btnYes {
+    background: rgb(130, 209, 12);
+}
+.btnNo {
+    background: red;
+}
+.btn:active {
+    transform: translateY(1px);
+}
+#tableContainer{
+    max-height: 200px; 
+    overflow-y: auto;        
+    overflow-x: hidden; 
+    scrollbar-width: 1px;    
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+table{
+        border-collapse: collapse;
+        width: 80%;
+        margin: 20px auto;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 10px 8px;
+        text-align: center;
+        font-size: 12px;
+    }
+    th {
+        background-color: #ff7f50;
+        color: white;
+        
+    }
+    tr:nth-child(even) {
+        background-color: #f9efef;
+}
+#username{
+    border: 2px solid #fa5959;
+    border-radius: 10px;
+    height: 25px;
+    width: 50%;
+    margin: 0 auto 0px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(247, 72, 101);
+    font-weight: 600;
+}
