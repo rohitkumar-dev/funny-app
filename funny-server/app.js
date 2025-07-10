@@ -7,7 +7,7 @@ config()
 const app = express();
 //app.use(cors());
 app.use(cors({
-  origin: "https://funny-client.onrender.com/"
+  origin: "https://funny-client.onrender.com"
 }));
 app.use(express.json());
 
